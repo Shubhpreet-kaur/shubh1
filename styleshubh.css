@@ -55,6 +55,7 @@ h3{
     margin: 30px;
     display: none;
     border-radius: 10px;
+     transition:  ease; 
 }
 .unit strong:hover + p{
     display: block;
