@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    background-color: rgb(246, 235, 220);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    perspective: 10px;
+}
+.container{
+    height: 350px;
+    width: 560px;
+    transform-style: preserve-3d;
+
+    position: relative;
+    background-color: white;
+    display: flex;
+    
+   transform:translateZ(-20px) translateY(200px) scale(2.5);
+    border-radius: 0.6rem;
+}
+.container:hover{
+    box-shadow: 5px 5px 50px rgb(73, 219, 221) ,
+    -5px -5px 50px rgb(73, 219, 221) ;
+}
+.mugimg{
+    width: 50%;
+    height: 100%;
+    border-radius: 0.6rem 0 0 0.6rem;
+    object-fit: cover;
+}
+h6{
+    font-family: "Montserrat",sans-serif;
+    letter-spacing:0.5em;
+   
+}
+h2{
+   margin-bottom:15px ;
+   font-weight: bolder;
+   font-size: xx-large;
+   color: black;
+}
+.text{
+    color: rgb(103, 107, 107);
+    background-color: white;
+    font-family: "Fraunces",serif;
+    text-align: left; padding: 15px;
+border-radius: 15px;
+    /* font-family: "Montserrat",sans-serif; */
+}
+.newbox{
+    margin-top: 10px;
+}
+.price{
+    color: darkgreen;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.cart{
+    display:block;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    border-radius:5px ;
+    cursor: pointer;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    padding-left: 70px;
+    padding-right: 70px;
+}
