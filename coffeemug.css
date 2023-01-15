@@ -25,7 +25,7 @@
     border-radius: 0.6rem;
 }
 .container:hover{
-    box-shadow: 5px 5px 50px rgb(73, 219, 221) ,
+    box-shadow: 5px 5px 50px rgba(200, 231, 132, 0.786) ,
     -5px -5px 50px rgb(73, 219, 221) ;
 }
 .mugimg{
@@ -63,7 +63,7 @@ border-radius: 15px;
 }
 .cart{
     display:block;
-    padding: 10px;
+    padding: 5%;
     border: none;
     margin: 10px;
     border-radius:5px ;
@@ -71,6 +71,6 @@ border-radius: 15px;
     background-color: darkgreen;
     color: white;
     font-weight: bold;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 3em;
+    padding-right: 3em;
 }
