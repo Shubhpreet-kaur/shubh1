@@ -13,7 +13,7 @@
     perspective: 10px;
 }
 .container{
-    height: 350px;
+    height: 23em;
     width: 560px;
     transform-style: preserve-3d;
 
