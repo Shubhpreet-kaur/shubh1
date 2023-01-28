@@ -54,7 +54,7 @@ h3{
     border-radius: 10px;
 }
 .unit:hover {
-    transform: scaleY(3);
+    transform: scaleY(1.5);
     
 }
 .unit p{
