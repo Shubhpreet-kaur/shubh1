@@ -53,9 +53,20 @@ h3{
     margin: 10px;
     border-radius: 10px;
 }
-.unit:hover {
-    transform: scaleY(1.5);
+.unit :hover {
+    animation: rooh 5s;
     
+}
+@keyframes rooh {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 .unit p{
     margin: 30px;
