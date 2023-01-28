@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    transition: all 0.2s;
 }
 .bckimage,.wrapper{
     position: absolute;
@@ -23,6 +24,7 @@
 }
 
 h3{
+    position: relative;
     background-color: aquamarine;
     display: inline;
     border-radius: 10px;
@@ -34,6 +36,7 @@ h3{
                0px 5px 30px #21d849,
                -10px 5px 30px #21d849;
     padding: 10px;
+    z-index: 0;
 }
 
 .unit{
@@ -41,7 +44,7 @@ h3{
     background-color: bisque;
     padding: 20px;
     border-radius: 10px;
-    transition: 0.2ms ease; 
+    transition:2s ; 
 }
 
 .unit strong{
@@ -50,23 +53,44 @@ h3{
     margin: 10px;
     border-radius: 10px;
 }
-
+.unit:hover {
+    transform: scaleY(3);
+    
+}
 .unit p{
     margin: 30px;
     display: none;
     border-radius: 10px;
-   transition-timing-function: ease-in;
+    transition: all 1s;
 }
-.unit strong:hover + p{
+.unit:hover p{
     display: block;
     box-shadow:
     20px 5px 40px #CF77F3,
       0px 5px 40px #21d849,
      -20px 5px 40px #2AC9DB;
      background-color: azure;
+     transform: scale(1);
+     transition: 2s;
+
 }
 
 u{
     color: blue;
     text-align: left;
+}
+
+h3::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(188, 28, 57, 0.308);
+    transform-origin: left;
+    transition: all 1s;
+    transform: scaleX(0);
+    border-radius: 10px;
+    z-index: 1;
+}
+h3:hover::before{
+    transform: scaleX(1);
 }
